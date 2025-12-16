@@ -11,3 +11,5 @@
 ## NS-3 script for simulations of the LoRaWAN network and allocation mechanism: `sas26.cc`
 
 ## Python script to automate tests of the allocation mechanisms: `sas26.py`
+
+## LoRaWAN module repository: [Access here](https://github.com/thiagoallisson90/lorawan/tree/develop)
