@@ -124,7 +124,7 @@ def test_isfa():
      
      sm_coords = pd.read_csv(f'{coords_dir}/{scenario}/{scenario}sms.csv', names=['x', 'y'])[['x', 'y']].values
      gw_coords = pd.read_csv(f'{coords_dir}/{scenario}/{k}gws.csv', names=['x', 'y'])[['x', 'y']].values
-     simulate(script, scenario, k, sfa, path, sm_coords, gw_coords, radius)
+     simulate(script, path, sm_coords, gw_coords, radius, sfa, ns3_cmd)
      filesfa = make_file_name(path, f'{k}gw_data')
      
      while(check(filesfa) == False):
@@ -135,7 +135,7 @@ def test_isfa():
         
         sm_coords = pd.read_csv(f'{coords_dir}/{scenario}/{scenario}sms.csv', names=['x', 'y'])[['x', 'y']].values
         gw_coords = pd.read_csv(f'{coords_dir}/{scenario}/{k}gws.csv', names=['x', 'y'])[['x', 'y']].values
-        simulate(script, scenario, k, sfa, path, sm_coords, gw_coords, radius)
+        simulate(script, path, sm_coords, gw_coords, radius, sfa, ns3_cmd)
         filesfa = make_file_name(path, f'{k}gw_data')
 
      pd.DataFrame([k]).to_csv(make_file_name(path, 'k'), header=False, index=False)
@@ -302,3 +302,7 @@ def test_drsftpa():
 
 if __name__ == "__main__":
     test_adr()
+    test_isfa()
+    test_caadr()
+    test_drsfa()
+    test_drsftpa()
