@@ -5,7 +5,7 @@ from concurrent.futures import ProcessPoolExecutor
 import time
 from datetime import datetime
 
-result_path = '/home/thiago/Doutorado/SAS26/results'
+result_path = '/home/thiago/Doutorado/SBRC26/results'
 ns3_path = '/home/thiago/ns-3-allinone/ns-3.44'
 ns3_cmd = f'{ns3_path}/./ns3'
 script = 'scratch/sbrc26/sbrc26.cc'
