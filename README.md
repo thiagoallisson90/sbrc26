@@ -12,4 +12,4 @@
 
 ## Python script to automate tests of the allocation mechanisms: `sbrc26.py`
 
-## LoRaWAN module repository: [Access here](https://github.com/thiagoallisson90/lorawan/tree/develop)
+## LoRaWAN module repository: [Access here](https://github.com/signetlabdei/lorawan)
